@@ -1,7 +1,7 @@
 window.addEventListener('load', iniciar);
 
 function iniciar() {
-    const navbarHeader = document.getElementById('navbar-header');
+    const navbarHeader = document.querySelector('#navbar-header');
     let lastScrollTop = 0;
     window.addEventListener('scroll', function () {
         let scrollTop = document.documentElement.scrollTop;
@@ -15,8 +15,8 @@ function iniciar() {
     });
 
     //Responsive: mostrar u ocultar navbar con el botón hamburguesa:
-    document.getElementsByClassName('menu-toggle')[0].addEventListener('click', function () {
-        document.getElementsByClassName('navbar-list')[0].classList.toggle('show');
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('.navbar-list').classList.toggle('show');
     })
 }
 
