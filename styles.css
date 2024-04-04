@@ -15,9 +15,6 @@ body {
     width: 100%;
     font-size: 16px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /*Elementos de la cabecera*/
@@ -32,7 +29,7 @@ header {
     z-index: 1;
 }
 
-#logo {
+.header-logo {
     height: 75px;
     margin: 0em;
     padding: 0em;
@@ -246,6 +243,18 @@ main {
     background-color: var(--orange);
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+}
+
+/*Estilos enlace genérico:*/
+.regular-anchor {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.regular-anchor:hover {
+    color: var(--orange);
+    text-decoration: underline;
 }
 
 /*Media queries*/
