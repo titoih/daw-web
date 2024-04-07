@@ -1,0 +1,33 @@
+Flujo de trabajo con Git:
+
+· Crear rama:
+
+$ git checkout/switch main
+$ git pull origin main
+$ git branch rama_nueva
+$ git checkout/switch rama_nueva
+
+· Trabajo en local y actualizar el repo remoto: 
+
+$ git add archivo(s) afectados ( . para añadirlos todos. Previamente se puede hacer un git status para ver qué archivos se han modificado)
+$ git commit -m "Mensaje"
+$ git push origin rama_nueva
+
+· Para subir cambios finalizados y validados por el equipo (merge con main)
+
+$ git switch main
+$ git pull origin main
+$ git merge rama_nueva
+[Resolver posibles conflictos] -> git commit -m "Se resuelve conflicto blabla"
+$git push origin main
+
+· O, de manera alternativa: 
+
+$ git switch main
+$ git pull origin main
+$ git switch rama_nueva
+$ git merge main
+[Resolver posibles conflictos] -> git commit -m "Se resuelve conflicto blabla"
+$ git switch main
+$ git merge rama_nueva
+$ git push origin main
