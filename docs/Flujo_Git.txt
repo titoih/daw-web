@@ -13,6 +13,8 @@ $ git add archivo(s) afectados ( . para añadirlos todos. Previamente se puede h
 $ git commit -m "Mensaje"
 $ git push origin rama_nueva
 
+(Nota: si hacemos "git push -u origin main" se establece una relación de siguimiento entre la rama local y la remota (tracking branch), de esta manera de ahora en adelante podrás poner solo "git push", git sabrá automáticamente donde enviar los cambios.)
+
 · Para subir cambios finalizados y validados por el equipo (merge con main)
 
 $ git switch main
