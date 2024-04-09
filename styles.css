@@ -1,7 +1,10 @@
 :root {
-    --blue: #003366;
-    --orange: #CC6600;
-    --yellow: #FFCC33;
+    /*Colores globales*/
+    --blue: #036;
+    --orange: #C60;
+    --yellow: #FC3;
+    --text: #666;
+    --title: #333;
 }
 
 * {
