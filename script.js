@@ -16,7 +16,9 @@ function iniciar() {
 
     //Responsive: mostrar u ocultar navbar con el botón hamburguesa:
     document.querySelector('.menu-toggle').addEventListener('click', function () {
-        document.querySelector('.navbar-list').classList.toggle('show');
+        document.getElementById('navigation-menu').classList.toggle('show');
+        document.getElementById('language-picker').classList.toggle('show');
+        document.getElementById('social-links-header').classList.toggle('show');
     })
 }
 
