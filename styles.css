@@ -34,9 +34,6 @@ header {
 
 .header-logo {
     height: 75px;
-    margin: 0em;
-    padding: 0em;
-    display: inline-block;
 }
 
 #navbar-header {
@@ -128,27 +125,27 @@ header {
 }
 
 /*Botones sociales*/
-.social-links {
+.social-links-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.social-links a {
-    height: 20px;
-    width: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    text-align: center;
+.social-links-header a {
     margin: 0.5em 0.2em;
     border-radius: 50%;
     color: var(--blue);
     transition: all 0.5s ease;
 }
 
-.social-links a:hover {
-    color: var(--orange);
+.social-icon {
+    width: 20px;
+    height: 20px;
 }
 
+.social-links-header a:hover {
+    color: var(--orange);
+}
 
 /*Imagen cabecera*/
 .imagen-cabecera {
@@ -315,18 +312,13 @@ main {
         text-shadow: 2px 2px var(--blue);
     }
 
-}
-
-/* Pantallas pequeñas (comportamiento navbar e icono hamburguesa) */
-@media screen and (max-width: 768px) {
-
     header,
     #navbar-header {
         display: block;
     }
 
     .navbar-list,
-    .lenguage-selector-form {
+    .social-links-header {
         display: none;
     }
 
@@ -341,6 +333,10 @@ main {
 
     .show {
         display: block;
-        margin-top: 2rem;
+        margin-top: 0.5em;
+    }
+
+    article.show {
+        padding: 14px 16px;
     }
 }
