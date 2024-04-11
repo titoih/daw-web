@@ -404,6 +404,10 @@ footer ul {
     display: inline-block;
 }
 
+ul.tos > li {
+    padding: .5em;
+}
+
 /*Media queries*/
 @media (max-width: 1300px) {
     main {
@@ -457,13 +461,16 @@ footer ul {
 
 /*responsive*/
 @media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .full-col {
+        width: 100%;
+    }
 }
 @media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
+    .footer-col{
+        width: 100%;
+    }
 }
