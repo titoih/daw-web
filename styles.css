@@ -79,7 +79,6 @@ header {
 
 .dropdown-content li {
     display: block;
-    background-color: white;
 }
 
 .dropdown-content a {
@@ -329,14 +328,20 @@ main {
 
     .navbar-list li {
         display: block;
+        background-color: rgba(0, 0, 0, 0.1);
     }
 
     .show {
         display: block;
-        margin-top: 0.5em;
     }
 
     article.show {
         padding: 14px 16px;
+        margin-top: 0.5em;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
     }
 }
