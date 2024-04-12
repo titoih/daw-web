@@ -48,6 +48,7 @@ header {
 .navbar-list li {
     list-style-type: none;
     display: inline-block;
+    background-color: white;
 }
 
 .navbar-list li a {
@@ -123,27 +124,32 @@ header {
     fill: var(--orange);
 }
 
-/*Botones sociales*/
-.social-links-header {
+/*Botones sociales y Área personal*/
+.social-links-header,
+.client-area {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.social-links-header a {
-    margin: 0.5em 0.2em;
+.social-links-header a,
+.client-area a {
+    margin: 0.5em 0.3em;
     border-radius: 50%;
     color: var(--blue);
     transition: all 0.5s ease;
 }
 
-.social-icon {
-    width: 20px;
-    height: 20px;
+.social-icon,
+.client-area-icon {
+    width: 30px;
+    height: 30px;
 }
 
-.social-links-header a:hover {
+.social-links-header a:hover,
+.client-area a:hover {
     color: var(--orange);
+    transform: scale(1.2);
 }
 
 /*Imagen cabecera*/
@@ -317,7 +323,8 @@ main {
     }
 
     .navbar-list,
-    .social-links-header {
+    .social-links-header,
+    .client-area {
         display: none;
     }
 

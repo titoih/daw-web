@@ -19,6 +19,7 @@ function iniciar() {
         document.getElementById('navigation-menu').classList.toggle('show');
         document.getElementById('language-picker').classList.toggle('show');
         document.getElementById('social-links-header').classList.toggle('show');
+        document.getElementById('client-area').classList.toggle('show');
     })
 }
 
