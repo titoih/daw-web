@@ -342,7 +342,7 @@ main {
         display: block;
     }
 
-    article.show {
+    section.show {
         padding: 14px 16px;
         margin-top: 0.5em;
     }
