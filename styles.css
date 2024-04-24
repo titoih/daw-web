@@ -100,10 +100,10 @@ header {
     display: none;
     border: none;
     cursor: pointer;
-    /*Lo posicionamos absolutamente en la esquina superior derecha*/
+    /*Lo posicionamos absolutamente en la esquina superior derecha (se tiene en cuenta el margin de nav#navbar-header) */
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0.4rem;
+    top: 0.8rem;
     /* Ocultamos el check */
     opacity: 0;
     /* Lo ponemos encima del icono hamburguesa  */
