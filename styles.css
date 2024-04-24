@@ -93,19 +93,29 @@ header {
     display: block;
 }
 
-/*Botón hamburguesa*/
+/*Menú hamburguesa*/
 .menu-toggle {
+    height: 75px;
+    width: 75px;
     display: none;
     border: none;
     cursor: pointer;
-    background-color: transparent;
-
+    /*Lo posicionamos absolutamente en la esquina superior derecha*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* Ocultamos el check */
+    opacity: 0;
+    /* Lo ponemos encima del icono hamburguesa  */
+    z-index: 1;
 }
 
 .burger-icon {
     height: 75px;
     width: 75px;
     fill: var(--blue);
+    display: none;
+    float: right;
 }
 
 .menu-toggle:hover {
@@ -328,9 +338,9 @@ main {
         display: none;
     }
 
-    .menu-toggle {
+    .menu-toggle,
+    .burger-icon {
         display: block;
-        float: right;
     }
 
     .navbar-list li {
@@ -338,11 +348,14 @@ main {
         background-color: rgba(0, 0, 0, 0.1);
     }
 
-    .show {
+    /*Cuando se haga click en el botón de check (icono hamburguesa) se muestra el menú de navegación, el selector de idiomas, los botones sociales y el área de cliente*/
+    .menu-toggle:checked~.navbar-list,
+    .menu-toggle:checked~.social-links-header,
+    .menu-toggle:checked~.client-area {
         display: block;
     }
 
-    section.show {
+    .menu-toggle:checked~section {
         padding: 14px 16px;
         margin-top: 0.5em;
     }
