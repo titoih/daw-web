@@ -311,6 +311,7 @@ main {
 }
 
 /*Estilos reviews*/
+
 /*
 .reviews-section {
     display: flex;
@@ -334,11 +335,13 @@ main {
 .review-card:last-child {
     margin-right: 0; /* Elimina el margen derecho del último elemento para evitar desbordamiento 
 }*/
-.reviews {
-    margin-top: 1rem;
+
+
+
+.review-section {
+    margin-top: 2rem;
     text-align: center;
 }
-
 
 .rating {
     margin: 1rem;
@@ -355,22 +358,13 @@ main {
     width: 300px;
     height:200px;
 }
-/*
-hr {
-    background-color: #666;
-    height: 1px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-*/
 
-.button-arrow {
+.button-left,.button-right {
     background-color: white;
-    text-align: center;
-    
+    text-align: center;    
 }
 
-.button-arrow:hover {
+.button-left:hover, .button-right:hover {
     transform: scale(1.1);
 }
 
