@@ -384,11 +384,12 @@ footer ul {
 .sub-container ul {
     display: flex;
     flex-direction: row;
-    padding: 2em;
+    padding: 1em;
     justify-content: space-between;
 }
 .full-col {
     width: 100%;
+    padding: 2.5%;
 }
 
 #title-1n-footer {
@@ -396,11 +397,17 @@ footer ul {
 }
 
 .footer-logo {
-    width: 50%;
+    width: 75%;
     height: 50%;
     margin: 0em;
     padding: 0em;
     display: inline-block;
+}
+
+footer h2 {
+    color: white;
+    font-size: 20px;
+    padding: 1em 0;
 }
 
 ul.tos > li {
