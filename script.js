@@ -1,6 +1,7 @@
 window.addEventListener('load', iniciar);
 
 function iniciar() {
+    //La cabecera se fija arriba al hacer scroll up.
     const navbarHeader = document.querySelector('#navbar-header');
     let lastScrollTop = 0;
     window.addEventListener('scroll', function () {
@@ -13,11 +14,6 @@ function iniciar() {
         }
         lastScrollTop = scrollTop;
     });
-
-    //Responsive: mostrar u ocultar navbar con el botón hamburguesa:
-    document.querySelector('.menu-toggle').addEventListener('click', function () {
-        document.querySelector('.navbar-list').classList.toggle('show');
-    })
 }
 
 

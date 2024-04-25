@@ -34,26 +34,24 @@ header {
 
 .header-logo {
     height: 75px;
-    margin: 0em;
-    padding: 0em;
-    display: inline-block;
 }
 
 #navbar-header {
     width: 100%;
     display: flex;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     align-items: center;
     justify-content: space-around;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 0.8rem 0.4rem;
 }
 
-.navbar-li {
+.navbar-list li {
     list-style-type: none;
     display: inline-block;
+    background-color: white;
 }
 
-.navbar-li a {
+.navbar-list li a {
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
@@ -63,12 +61,16 @@ header {
     font-weight: 800;
 }
 
-.navbar-li a:hover {
+.navbar-list li a:hover {
     color: var(--orange);
     text-decoration: underline;
 }
 
 /*La clase .dropdown-content estiliza el contenido desplegable. Está oculta por defecto y se mostrará al hacer "hover" sobre .dropdown*/
+.dropdown {
+    display: relative;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -84,7 +86,6 @@ header {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background-color: white;
 }
 
 /*La clase .dropdown estiliza el elemento <li> que "activa" el menú desplegable al hacer "hover" sobre él.*/
@@ -92,24 +93,73 @@ header {
     display: block;
 }
 
-/*Botón hamburguesa*/
+/*Menú hamburguesa*/
 .menu-toggle {
+    height: 75px;
+    width: 75px;
     display: none;
     border: none;
     cursor: pointer;
-    background-color: transparent;
-
+    /*Lo posicionamos absolutamente en la esquina superior derecha (se tiene en cuenta el margin de nav#navbar-header) */
+    position: absolute;
+    right: 0.4rem;
+    top: 0.8rem;
+    /* Ocultamos el check */
+    opacity: 0;
+    /* Lo ponemos encima del icono hamburguesa  */
+    z-index: 1;
 }
 
 .burger-icon {
     height: 75px;
     width: 75px;
     fill: var(--blue);
+    display: none;
+    float: right;
 }
 
 .menu-toggle:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 0.5em;
+}
+
+/*Selector de idioma*/
+.language-icon {
+    height: 20px;
+    fill: var(--blue);
+    margin-left: 0.2em;
+}
+
+.navbar-list li a:hover .language-icon {
+    fill: var(--orange);
+}
+
+/*Botones sociales y Área personal*/
+.social-links-header,
+.client-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links-header a,
+.client-area a {
+    margin: 0.5em 0.3em;
+    border-radius: 50%;
+    color: var(--blue);
+    transition: all 0.5s ease;
+}
+
+.social-icon,
+.client-area-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.social-links-header a:hover,
+.client-area a:hover {
+    color: var(--orange);
+    transform: scale(1.2);
 }
 
 /*Imagen cabecera*/
@@ -129,7 +179,12 @@ header {
 .imagen-cabecera h1,
 .imagen-cabecera h2 {
     text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
     margin: 1rem;
+}
+
+.imagen-cabecera h1 {
+    text-transform: uppercase;
 }
 
 /*Estilos tipográficos genéricos*/
@@ -361,34 +416,45 @@ ul.tos > li {
     .imagen-cabecera h1,
     .imagen-cabecera h2 {
         color: white;
+        text-shadow: 2px 2px var(--blue);
     }
-
-}
-
-/* Pantallas pequeñas (comportamiento navbar e icono hamburguesa) */
-@media screen and (max-width: 768px) {
 
     header,
     #navbar-header {
         display: block;
     }
 
-    .navbar-list {
+    .navbar-list,
+    .social-links-header,
+    .client-area {
         display: none;
     }
 
-    .menu-toggle {
-        display: block;
-        float: right;
-    }
-
-    .navbar-li {
+    .menu-toggle,
+    .burger-icon {
         display: block;
     }
 
-    .show {
+    .navbar-list li {
         display: block;
-        margin-top: 2rem;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /*Cuando se haga click en el botón de check (icono hamburguesa) se muestra el menú de navegación, el selector de idiomas, los botones sociales y el área de cliente*/
+    .menu-toggle:checked~.navbar-list,
+    .menu-toggle:checked~.social-links-header,
+    .menu-toggle:checked~.client-area {
+        display: block;
+    }
+
+    .menu-toggle:checked~section {
+        padding: 14px 16px;
+        margin-top: 0.5em;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
     }
 }
 
