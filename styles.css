@@ -206,9 +206,17 @@ h2 {
 h3 {
     font-family: "Montserrat";
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     margin: 1rem;
-    color: #333;
+    color: var(--title);
+}
+
+h4 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 18px;
+    margin: 1rem;
+    color: var(--title);
 }
 
 p {
@@ -216,6 +224,23 @@ p {
     font-weight: 400;
     font-size: 16px;
     margin: 1rem;
+    color: var(--text);
+}
+
+/*Colores de fondo por categoría*/
+.bg-senderismo {
+    background-color: var(--blue);
+    color: white;
+}
+
+.bg-kayak {
+    background-color: var(--orange);
+    color: white;
+}
+
+.bg-buceo {
+    background-color: var(--yellow);
+    color: var(--blue);
 }
 
 /*Main y contenido*/
@@ -251,7 +276,7 @@ main {
     transition: 0.3s;
     border-radius: 5px;
     margin: 2%;
-    width: 300px;
+    width: 400px;
 
 }
 
@@ -267,12 +292,38 @@ main {
 
 .card img {
     border-radius: 5px 5px 0 0;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     object-fit: cover;
     /*Mantener relación de aspecto y hacer imagen responsive:*/
     /*max-width: 100%; /*100% del largo de la imagen ocupando el máximo del tamaño del contenedor.*/
     /*height: auto /*Se ajusta automáticamente al alto de la imagen*/
+}
+
+figure {
+    position: relative;
+    height: fit-content;
+}
+
+figcaption {
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    padding: 0.5rem;
+}
+
+figcaption p {
+    margin: 0rem;
+}
+
+p.category {
+    float: left;
+    color: inherit;
+}
+
+p.price {
+    float: right;
+    color: inherit;
 }
 
 /*Botones*/
@@ -311,6 +362,18 @@ main {
 
 .blue-button:hover {
     background-color: var(--orange);
+}
+
+.orange-button {
+    background-color: var(--orange);
+}
+
+.orange-button a {
+    color: white;
+}
+
+.orange-button:hover {
+    background-color: var(--blue);
 }
 
 .yellow-button {

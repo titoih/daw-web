@@ -3,6 +3,13 @@
     background-position: center;
 }
 
+.imagen-cabecera h3 {
+    color: white;
+    background-color: var(--orange);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
 .main-section-ex {
     grid-column: 2 / 3;
     margin: 3rem 0rem;
@@ -45,7 +52,6 @@ video {
 .month {
     padding: 70px 25px;
     width: 100%;
-    background: var(--orange);
     text-align: center;
 }
 
@@ -54,7 +60,6 @@ video {
 }
 
 .month ul li {
-    color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -99,8 +104,6 @@ video {
 
 .days li .active {
     padding: 0.4rem;
-    background: var(--orange);
-    color: white;
 }
 
 /* Media queries */
