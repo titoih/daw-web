@@ -228,17 +228,17 @@ p {
 }
 
 /*Colores de fondo por categoría*/
-.bg-senderismo {
+.bg-blue {
     background-color: var(--blue);
     color: white;
 }
 
-.bg-kayak {
+.bg-orange {
     background-color: var(--orange);
     color: white;
 }
 
-.bg-buceo {
+.bg-yellow {
     background-color: var(--yellow);
     color: var(--blue);
 }
@@ -302,7 +302,6 @@ main {
 
 figure {
     position: relative;
-    height: fit-content;
 }
 
 figcaption {
@@ -310,20 +309,22 @@ figcaption {
     position: absolute;
     bottom: 0rem;
     padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 figcaption p {
     margin: 0rem;
+
 }
 
 p.category {
     float: left;
-    color: inherit;
+    color: white;
 }
 
 p.price {
     float: right;
-    color: inherit;
+    color: white;
 }
 
 /*Botones*/
@@ -352,45 +353,33 @@ p.price {
     transition-timing-function: ease-in-out;
 }
 
-.blue-button {
-    background-color: var(--blue);
+button.bg-blue a {
+    color: inherit;
 }
 
-.blue-button a {
-    color: white;
-}
-
-.blue-button:hover {
+button.bg-blue:hover {
     background-color: var(--orange);
 }
 
-.orange-button {
-    background-color: var(--orange);
+button.bg-orange a {
+    color: inherit;
 }
 
-.orange-button a {
-    color: white;
-}
-
-.orange-button:hover {
+button.bg-orange:hover {
     background-color: var(--blue);
 }
 
-.yellow-button {
-    background-color: var(--yellow);
-}
-
-.yellow-button a {
+button.bg-yellow a {
     color: var(--blue);
 }
 
-.yellow-button:hover {
+button.bg-yellow:hover {
     background-color: var(--blue);
 
 }
 
-.yellow-button:hover a {
-    color: white;
+button.bg-yellow:hover a {
+    color: inherit;
 }
 
 /*Estilos enlace genérico:*/

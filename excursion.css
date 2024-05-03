@@ -1,13 +1,12 @@
 .imagen-cabecera {
-    background-image: url("https://images.unsplash.com/photo-1562431072-3b50f95f2bb5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1620052687177-9ba9e51a4ea6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-position: center;
 }
 
-.imagen-cabecera h3 {
+.imagen-cabecera h1,
+.imagen-cabecera h2 {
     color: white;
-    background-color: var(--orange);
-    padding: 0.5em;
-    border-radius: 0.5em;
+    text-shadow: 2px 2px var(--blue);
 }
 
 .main-section-ex {
