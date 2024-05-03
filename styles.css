@@ -276,7 +276,7 @@ main {
 }
 
 /*Botones*/
-.blue-button {
+.btn {
     font-size: 1.2em;
     border-radius: 0.5em;
     border-style: none;
@@ -284,24 +284,50 @@ main {
     margin: 0.5em;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.2);
-    background-color: var(--blue);
 }
 
-.blue-button a {
+.btn a {
     display: inline-block;
     text-align: center;
     padding: 0.9rem 1rem;
     text-decoration: none;
     font-family: "Montserrat";
     font-weight: 800;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.blue-button {
+    background-color: var(--blue);
+}
+
+.blue-button a {
     color: white;
 }
 
 .blue-button:hover {
-    transform: scale(1.1);
     background-color: var(--orange);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+}
+
+.yellow-button {
+    background-color: var(--yellow);
+}
+
+.yellow-button a {
+    color: var(--blue);
+}
+
+.yellow-button:hover {
+    background-color: var(--blue);
+
+}
+
+.yellow-button:hover a {
+    color: white;
 }
 
 /*Estilos enlace genérico:*/
@@ -330,7 +356,6 @@ footer ul {
 
 .footer {
     background-color: var(--blue);
-    ;
     padding: 0;
 }
 
