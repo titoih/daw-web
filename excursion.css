@@ -1,0 +1,58 @@
+.imagen-cabecera {
+    background-image: url("https://images.unsplash.com/photo-1562431072-3b50f95f2bb5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+}
+
+.main-section-ex {
+    grid-column: 2 / 3;
+    margin: 3rem 0rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.description {
+    grid-column: 1 / 2;
+    padding: 1rem;
+}
+
+.booking {
+    grid-column: 2 / 3;
+    padding: 1rem;
+}
+
+.description h2,
+.booking h2 {
+    text-align: center;
+}
+
+.img-description {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    padding: 1rem;
+}
+
+figcaption {
+    text-align: center;
+    font-size: smaller;
+}
+
+@media (max-width: 767px) {
+    .main-section-ex {
+        grid-template-columns: 100%;
+    }
+
+    .description {
+        grid-column: 1;
+        padding: 1rem;
+    }
+
+    .booking {
+        grid-column: 1;
+        padding: 1rem;
+    }
+
+
+}
