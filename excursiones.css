@@ -2,3 +2,69 @@
     background-image: url("https://images.unsplash.com/photo-1545289666-5b934d291c6b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-position: top;
 }
+
+main {
+    grid-template-columns: 80%;
+    justify-content: center;
+
+}
+
+form {
+    margin: 2%;
+    padding: 2%;
+}
+
+.ex-container {
+    flex-direction: column;
+}
+
+.excursion {
+    width: 100%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.excursion:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);
+}
+
+.excursion figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 1%;
+}
+
+.excursion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.excursion aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 1%;
+}
+
+.excursion aside p {
+    text-align: justify;
+}
+
+.excursion h4 {
+    padding: 1%;
+}
+
+.waves-icon {
+    height: 1em;
+    color: var(--title);
+}

@@ -277,7 +277,6 @@ main {
     border-radius: 5px;
     margin: 2%;
     width: 400px;
-
 }
 
 .card:hover {
@@ -300,8 +299,9 @@ main {
     /*height: auto /*Se ajusta automáticamente al alto de la imagen*/
 }
 
-figure {
+.card figure {
     position: relative;
+    height: calc(400px*(3/4));
 }
 
 figcaption {
