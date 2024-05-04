@@ -9,11 +9,41 @@ main {
 
 }
 
+/*Formulario filtro y búsqueda*/
 form {
     margin: 2%;
     padding: 2%;
+    display: flex;
+    justify-content: space-around;
 }
 
+.search-bar {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--title);
+    border-radius: 0.3em;
+}
+
+.search button {
+    border: none;
+    cursor: pointer;
+    color: var(--title);
+    padding: 0.5rem;
+}
+
+.searchbutton:hover {
+    background: #ff99c8;
+}
+
+.search-icon {
+    height: 1rem;
+    border-radius: 0.2em;
+    color: var(--title);
+    font-size: 1.2rem;
+
+}
+
+/*Contenido:*/
 .ex-container {
     flex-direction: column;
 }

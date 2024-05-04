@@ -107,18 +107,27 @@
 </header>
 <main>
     <form action="">
-        <fieldset>
-            <legend>Filtro:</legend>
-            <label for="">Categoría excursión: </label>
-            <select name="" id="">
-                <option value="">Senderismo</option>
-                <option value="">Kayak</option>
-                <option value="">Buceo</option>
+        <fieldset class="filter">
+            <label for="categoria">Filtro por categoría: </label>
+            <select name="categoria" id="categoria">
+                <option value="senderismo">Senderismo</option>
+                <option value="kayak">Kayak</option>
+                <option value="buceo">Buceo</option>
             </select>
+        </fieldset>
+        <fieldset class="search">
+            <label for="search-bar">Buscador:
+                <input class="search-bar" type="text" placeholder="Buscar..." name="search-bar" id="search-bar">
+            </label>
+            <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="search-icon"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg></button>
         </fieldset>
     </form>
     <section class="ex-container">
-        <article class="excursion">
+        <article class="excursion kayak">
             <figure>
                 <a href="excursion.html"><img
                         src="https://images.unsplash.com/photo-1596323718985-dc30d03b935f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
