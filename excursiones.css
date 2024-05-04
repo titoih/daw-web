@@ -29,6 +29,7 @@ form {
     cursor: pointer;
     color: var(--title);
     padding: 0.5rem;
+    background-color: transparent;
 }
 
 .searchbutton:hover {
@@ -40,7 +41,6 @@ form {
     border-radius: 0.2em;
     color: var(--title);
     font-size: 1.2rem;
-
 }
 
 /*Contenido:*/
