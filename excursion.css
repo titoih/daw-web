@@ -21,6 +21,21 @@
     padding: 1rem;
 }
 
+.description article {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.description article ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    margin-left: 2rem;
+    color: var(--text);
+}
+
 .booking {
     display: flex;
     flex-direction: column;
@@ -186,6 +201,7 @@ fieldset:first-of-type {
 fieldset legend {
     color: var(--title);
     font-weight: 600;
+    font-size: larger;
 }
 
 #user-feedback {
@@ -198,6 +214,11 @@ fieldset select {
     font-weight: 600;
     font-size: large;
     width: 4em;
+}
+
+.precio-total p {
+    font-weight: 600;
+    font-size: xx-large;
 }
 
 fieldset:last-of-type {

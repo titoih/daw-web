@@ -55,6 +55,7 @@ const eventoClick = (e) => {
 
     tickets.classList.add('hidden'); //Oculta los campos tickets y el botón de reservar
     btnReservar.classList.add('hidden');
+    fieldsetPecioTotal.classList.add('hidden');
 }
 
 /*Función renderCalendar(): para generar dinámicamente los días del mes a mostrar*/
@@ -150,6 +151,8 @@ nextButton.addEventListener('click', function () {
 })
 
 const radioButtons = document.querySelectorAll('.horarios input');
+const fieldsetPecioTotal = document.querySelector('.precio-total');
+const precioTotal = document.querySelector('#precio-total');
 for (const input of radioButtons) {
     input.addEventListener('click', function () { //Al hacer click en cualquiera de los horarios se muestran los tipos de ticket.
         tickets.classList.remove('hidden');
@@ -161,8 +164,13 @@ const menores = document.querySelector('#menores');
 tickets.addEventListener('change', function () { //Al cambiar el valor de alguno de los selects
     if (adultos.value !== '0' || menores.value !== '0') { // Si se selecciona algún tipo de entrada muestra el botón de reserva
         btnReservar.classList.remove('hidden');
+        fieldsetPecioTotal.classList.remove('hidden');
+        precioTotal.innerText = `${adultos.value * 25.00 + menores.value * 18.00}`;
     } else if (adultos.value === '0' && menores.value === '0') { // Si no hay seleccionada ninguna entrada oculta el botón de reserva
         btnReservar.classList.add('hidden');
+        fieldsetPecioTotal.classList.remove('hidden');
     }
 })
+
+
 
