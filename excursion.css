@@ -95,14 +95,29 @@ video {
     list-style-type: none;
     display: inline-block;
     width: calc(100%/8);
+    height: calc(100%/8);
     text-align: center;
     margin-bottom: 5px;
     font-size: 12px;
     color: #777;
+    font-size: 1rem;
+}
+
+.days li a {
+    display: inline-block;
+    width: 100%;
+    background-color: greenyellow;
+    text-decoration: none;
 }
 
 .days li .active {
     padding: 0.4rem;
+}
+
+.horarios p {
+    display: inline-block;
+    padding: 0.2rem;
+    background-color: greenyellow;
 }
 
 /* Media queries */

@@ -309,12 +309,16 @@ figcaption {
     position: absolute;
     bottom: 0rem;
     padding: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.5)
 }
 
 figcaption p {
     margin: 0rem;
 
+}
+
+.waves-icon {
+    height: 16px;
+    color: white;
 }
 
 p.category {
