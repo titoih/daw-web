@@ -43,11 +43,13 @@ video {
     margin: 1rem;
 }
 
+/*Calendario de reservas*/
 .calendar-wrapper {
     margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-/*Calendario de reservas*/
 .calendar-nav {
     padding: 70px 25px;
     width: 100%;
@@ -112,7 +114,7 @@ video {
 .days li {
     width: calc(100%/7);
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
     color: var(--title);
     font-size: 1rem;
     padding: 0.2rem;
@@ -122,7 +124,8 @@ video {
 }
 
 .days li.inactive {
-    color: #ddd;
+    color: #ccc;
+    cursor: default;
 }
 
 .days li.active {
@@ -141,23 +144,69 @@ video {
     z-index: -1;
 }
 
-.days li:hover::before {
-    background-color: rgba(0, 0, 0, 0.2);
+.days li.disponible::before {
+    background-color: rgba(0, 255, 0, 0.2);
 }
 
 .days li.active::before {
     background-color: var(--orange);
 }
 
-.horarios p {
-    display: inline-block;
-    padding: 0.2rem;
-    background-color: greenyellow;
+.days li:hover::before {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*Formulario de reserva*/
 .booking form {
+    background-color: #eee;
     margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    color: var(--text);
+}
+
+.booking label {
+    display: block;
+    font-family: inherit;
+    margin: 1rem;
+    font-size: larger;
+}
+
+fieldset {
+    padding: 1rem;
+}
+
+fieldset:first-of-type {
+    border-bottom: dotted var(--title) 0.3rem;
+    margin-bottom: 2rem;
+
+}
+
+fieldset legend {
+    color: var(--title);
+    font-weight: 600;
+}
+
+#user-feedback {
+    padding: 0.3rem;
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+fieldset select {
+    color: var(--text);
+    font-weight: 600;
+    font-size: large;
+    width: 4em;
+}
+
+fieldset:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Media queries */

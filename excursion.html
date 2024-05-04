@@ -129,6 +129,7 @@
                         <ul>
                             <li id="prev">&#10094;</li>
                             <li id="next">&#10095;</li>
+                            <!--Se añade el mes y el año dinámicamente con JavaScript-->
                             <li id="current-date"></li>
                         </ul>
                     </nav>
@@ -143,19 +144,52 @@
                             <li>Su</li>
                         </ul>
                         <ul class="days">
+                            <!--Se añaden los días del mes dinámicamente con JavaScript-->
                         </ul>
                     </section>
                 </section>
-                <form action="">
-                    <fieldset class="horarios">
+                <form action="" class="hidden">
+                    <fieldset class="horarios hidden">
                         <legend>Horarios:</legend>
-                        <p><a href="">10:30</a></p>
-                        <p><a href="">15:30</a></p>
+                        <label for="10:30"><time datetime="10:30">10:30</time>
+                            <input type="radio" name="hora" id="10:30" value="10:30" class="hora"></label>
+                        <label for="15:30"><time datetime="15:30">15:30</time>
+                            <input type="radio" name="hora" id="15:30" value="15:30" class="hora">
+                        </label>
+                        <p id="user-feedback"></p>
                     </fieldset>
-                    <fieldset class="tickets">
+                    <fieldset class="tickets hidden">
                         <legend>Tickets:</legend>
+                        <label for="adultos">Adultos:
+                            <select name="adultos" id="adultos">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select></label>
+
+                        <label for="menores">Menores:
+                            <select name="menores" id="menores">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </label>
                     </fieldset>
-                    <button class="btn bg-orange"><a href="">Reservar</a></button>
+                    <fieldset>
+                        <button class="btn bg-orange hidden"><a href="">Reservar</a></button>
+                    </fieldset>
                 </form>
             </aside>
         </section>
