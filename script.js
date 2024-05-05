@@ -15,7 +15,7 @@ function iniciar() {
         lastScrollTop = scrollTop;
     });
 }
- 
+
 /*Calendario dinámico:*/
 const currentDate = document.querySelector("#current-date");
 const daysTag = document.querySelector(".days");
@@ -165,7 +165,7 @@ tickets.addEventListener('change', function () { //Al cambiar el valor de alguno
     if (adultos.value !== '0' || menores.value !== '0') { // Si se selecciona algún tipo de entrada muestra el botón de reserva
         btnReservar.classList.remove('hidden');
         fieldsetPecioTotal.classList.remove('hidden');
-        precioTotal.innerText = `${adultos.value * 25.00 + menores.value * 18.00}`;
+        precioTotal.innerText = `${adultos.value * 25.00 + menores.value * 18.00}`; //Cálculo del precio total
     } else if (adultos.value === '0' && menores.value === '0') { // Si no hay seleccionada ninguna entrada oculta el botón de reserva
         btnReservar.classList.add('hidden');
         fieldsetPecioTotal.classList.remove('hidden');

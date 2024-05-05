@@ -21,16 +21,25 @@ const selectCategoria = document.querySelector('#categoria');
 selectCategoria.addEventListener('change', function () {
     const categoriaSeleccionada = this.value; // Obtiene el valor de la categoría seleccionada
 
-    // Oculta todos los elementos
-    const elementos = document.querySelectorAll('.senderismo, .kayak, .buceo, .astronomia');
-    elementos.forEach(elemento => {
-        elemento.style.display = 'none';
-    });
+    // Verifica si se ha seleccionado la categoría vacía
+    if (categoriaSeleccionada === '') {
+        // Si es la categoría vacía, muestra todos los elementos
+        const elementos = document.querySelectorAll('.senderismo, .kayak, .buceo, .astronomia');
+        elementos.forEach(elemento => {
+            elemento.style.display = 'flex'; // Cambia a 'flex' si usas esta propiedad en CSS
+        });
+    } else {
+        // Oculta todos los elementos
+        const elementos = document.querySelectorAll('.senderismo, .kayak, .buceo, .astronomia');
+        elementos.forEach(elemento => {
+            elemento.style.display = 'none';
+        });
 
-    // Muestra solo los elementos de la categoría seleccionada
-    const elementosMostrar = document.querySelectorAll(`.${categoriaSeleccionada}`);
-    elementosMostrar.forEach(elemento => {
-        elemento.style.display = 'flex';
-    });
+        // Muestra solo los elementos de la categoría seleccionada
+        const elementosMostrar = document.querySelectorAll(`.${categoriaSeleccionada}`);
+        elementosMostrar.forEach(elemento => {
+            elemento.style.display = 'flex'; // Cambia a 'flex' si usas esta propiedad en CSS
+        });
+    }
 });
 

@@ -106,20 +106,21 @@
     </section>
 </header>
 <main>
+    <!--Formulario: filtro y buscador-->
     <form action="">
         <fieldset class="filter">
-            <label for="categoria">Filtro: </label>
+            <label for="categoria">Filtro:</label>
             <select name="categoria" id="categoria">
-                <option value="">Categoría</option>
+                <option value="">Selecciona una categoría</option>
                 <option value="senderismo">Senderismo</option>
                 <option value="kayak">Kayak</option>
                 <option value="buceo">Buceo</option>
+                <option value="astronomia">Astronomía</option>
             </select>
         </fieldset>
         <fieldset class="search">
-            <label for="search-bar">Buscador:
-                <input class="search-bar" type="text" placeholder="Buscar..." name="search-bar" id="search-bar">
-            </label>
+            <label for="search-bar">Buscador:</label>
+            <input class="search-bar" type="text" placeholder="Buscar..." name="search-bar" id="search-bar">
             <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="search-icon"
                     viewBox="0 0 16 16">
                     <path
@@ -127,6 +128,7 @@
                 </svg></button>
         </fieldset>
     </form>
+    <!--Contenedor con las excursiones-->
     <section class="ex-container">
         <article class="excursion kayak">
             <figure>
