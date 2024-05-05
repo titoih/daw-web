@@ -43,3 +43,19 @@ selectCategoria.addEventListener('change', function () {
     }
 });
 
+// Obtiene el parámetro de categoría de la URL
+const urlParams = new URLSearchParams(window.location.search);
+const categoria = urlParams.get('categoria');
+
+// Filtra los resultados según la categoría seleccionada
+if (categoria) {
+    const elementos = document.querySelectorAll('.senderismo, .kayak, .buceo, .astronomia');
+    elementos.forEach(elemento => {
+        if (elemento.classList.contains(categoria)) {
+            elemento.style.display = 'flex';
+        } else {
+            elemento.style.display = 'none';
+        }
+    });
+}
+
