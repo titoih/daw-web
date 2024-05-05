@@ -447,7 +447,7 @@ footer ul {
     list-style: none;
 }
 
-.footer {
+footer {
     background-color: var(--blue);
     padding: 0;
 }
