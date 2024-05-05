@@ -15,7 +15,7 @@ function iniciar() {
         lastScrollTop = scrollTop;
     });
 }
-
+ 
 /*Calendario dinámico:*/
 const currentDate = document.querySelector("#current-date");
 const daysTag = document.querySelector(".days");
@@ -171,6 +171,3 @@ tickets.addEventListener('change', function () { //Al cambiar el valor de alguno
         fieldsetPecioTotal.classList.remove('hidden');
     }
 })
-
-
-
