@@ -1,0 +1,45 @@
+.imagen-cabecera {
+    background-image: url("https://images.unsplash.com/photo-1448944356016-9f5ad93875c8?q=80&w=2613&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+.imagen-cabecera h1 {
+    color: white;
+    text-shadow: 2px 2px var(--blue);
+}
+
+
+
+.imagen-somos-1,
+.imagen-somos-2 {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagen-somos-1 {
+    background-image: url("https://images.unsplash.com/photo-1579090814807-60808035e1cb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.imagen-somos-2 {
+    background-image: url("https://images.unsplash.com/photo-1607509635604-c6b321682a54?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.nosotros {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.historia {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.texto-historia {
+    flex: 1;
+    padding: 20px;
+    background: white; /* Agregamos un fondo blanco detrás del texto */
+    opacity: 0.8; /* Ajustamos la opacidad para que el texto sea legible */
+}
