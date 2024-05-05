@@ -194,7 +194,7 @@ main {
     box-shadow: 0 4px 2px -2px gray;*/
 }
 
-.card, .review-card p {
+.card p {
     text-align: justify;
     color: #666;
 }
@@ -341,6 +341,7 @@ main {
 .review-section {
     margin-top: 2rem;
     text-align: center;
+    position: relative;
 }
 
 .rating {
@@ -359,13 +360,32 @@ main {
     height:200px;
 }
 
-.button-left,.button-right {
-    background-color: white;
-    text-align: center;    
+.review-card p {
+    text-align: justify;
+    color: #666;
 }
 
+.button-left {
+    background-color: transparent;
+    position: absolute;
+    left: 10px; /* Ajusta este valor según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+.button-right{
+    background-color: transparent;
+    position: absolute;
+    right: 10px; /* Ajusta este valor según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+
+
 .button-left:hover, .button-right:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) translateY(-50%);
 }
 
 .review-card:hover {
