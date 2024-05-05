@@ -37,7 +37,7 @@ const btnReservar = document.querySelector('form .btn');
 
 const eventoClick = (e) => {
     date = new Date();
-    if (date.getDate() === parseInt(e.target.innerText)) { //Si el día seleccionado es hoy
+    if (date.getDate() === parseInt(e.target.innerText) && date.getMonth() === currentMonth) { //Si el día seleccionado es hoy
         if (date.getHours() >= 14) { //Deshabilitamos los botones si se pasa de la hora 
             document.querySelectorAll('.horarios input')[0].disabled = true;
             document.querySelectorAll('.horarios input')[1].disabled = true;
@@ -150,6 +150,7 @@ nextButton.addEventListener('click', function () {
     renderCalendar();
 })
 
+//Formulario:
 const radioButtons = document.querySelectorAll('.horarios input');
 const fieldsetPecioTotal = document.querySelector('.precio-total');
 const precioTotal = document.querySelector('#precio-total');
