@@ -16,6 +16,7 @@ function iniciar() {
     });
 }
 
+//Filtro por categorías:
 const selectCategoria = document.querySelector('#categoria');
 
 selectCategoria.addEventListener('change', function () {
@@ -43,10 +44,16 @@ selectCategoria.addEventListener('change', function () {
     }
 });
 
-// Obtiene el parámetro de categoría de la URL
-const urlParams = new URLSearchParams(window.location.search);
-const categoria = urlParams.get('categoria');
+// Categorías menú desplegable:
 
+// Obtiener el parámetro de categoría de la URL:
+// URLSearchParams es una interfaz que proporciona métodos para trabajar con los parámetros de consulta de una URL. 
+// window.location.search nos da la parte de la URL después del signo de interrogación ?, 
+// que contiene todos los parámetros de consulta (Ejemplo: "?categoria=senderismo").
+const urlParams = new URLSearchParams(window.location.search);
+// El método get() del objeto urlParams obtiene el valor del parámetro de consulta llamado 'categoria'. 
+// Ejemplo: categoria = 'senderismo'
+const categoria = urlParams.get('categoria');
 // Filtra los resultados según la categoría seleccionada
 if (categoria) {
     const elementos = document.querySelectorAll('.senderismo, .kayak, .buceo, .astronomia');
