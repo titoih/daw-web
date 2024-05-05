@@ -270,63 +270,18 @@ main {
     text-decoration: underline;
 }
 
-/*Media queries*/
-@media (max-width: 1300px) {
-    main {
-        grid-template-columns: 5% 90% 5%;
-    }
-
-    .imagen-cabecera h1,
-    .imagen-cabecera h2 {
-        color: white;
-    }
-
-}
-
-/* Pantallas pequeñas (comportamiento navbar e icono hamburguesa) */
-@media screen and (max-width: 768px) {
-
-    header,
-    #navbar-header {
-        display: block;
-    }
-
-    .navbar-list {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-        float: right;
-    }
-
-    .navbar-li {
-        display: block;
-    }
-
-    .show {
-        display: block;
-        margin-top: 2rem;
-    }
-}
 
 /*Estilos reviews*/
 .review-section {
     margin-top: 2rem;
     text-align: center;
     position: relative;
-    /*
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    
-    white-space: nowrap;
-    */
     margin-bottom: 2rem;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 .rating {
     margin: 1rem;
@@ -340,12 +295,13 @@ main {
     transition: 0.3s;
     border-radius: 5px;
     margin: 1%;
-    width: 300px;
+    width: 250px;
     height:200px;
-    /*
-    scroll-snap-align: center;
-    */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
+
 
 .review-card p {
     text-align: justify;
@@ -360,8 +316,8 @@ main {
     transform: translateY(-50%);
     transition: transform 0.3s ease;
     cursor: pointer;
-
 }
+
 .button-right{
     background-color: transparent;
     position: absolute;
@@ -372,8 +328,6 @@ main {
     cursor: pointer;
 }
 
-
-
 .button-left:hover, .button-right:hover {
     transform: scale(1.1) translateY(-50%);
 }
@@ -382,7 +336,6 @@ main {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     transform: scale(1.03);
 }
-
 
 /*Seccion Contacto*/
 .contact-section {
@@ -394,7 +347,6 @@ main {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
 
 .contact-info, .contact-form {
     display: flex;
@@ -411,7 +363,6 @@ main {
     flex-direction: column;
     text-align: center;
 }
-
 
 .contact-form form label {
     margin-bottom: 5px;
@@ -457,3 +408,44 @@ main {
     color: #333;
     margin: 0;
 }
+
+/*Media queries*/
+@media (max-width: 1300px) {
+    main {
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    .imagen-cabecera h1,
+    .imagen-cabecera h2 {
+        color: white;
+    }
+
+}
+
+/* Pantallas pequeñas (comportamiento navbar e icono hamburguesa) */
+@media screen and (max-width: 768px) {
+
+    header,
+    #navbar-header {
+        display: block;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        float: right;
+    }
+
+    .navbar-li {
+        display: block;
+    }
+
+    .show {
+        display: block;
+        margin-top: 2rem;
+    }
+}
+
