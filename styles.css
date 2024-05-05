@@ -311,33 +311,6 @@ main {
 }
 
 /*Estilos reviews*/
-
-/*
-.reviews-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; /* Evita el envolvimiento de las tarjetas 
-    padding: 0;
-    list-style-type: none; /* Elimina los marcadores de lista 
-    overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario 
-}
-*/
-/*
-.review-card {
-    width: 25%; /* Ancho fijo para cada tarjeta 
-    margin-right: 10px; /* Espacio entre las tarjetas 
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-}*/
-
-/*
-.review-card:last-child {
-    margin-right: 0; /* Elimina el margen derecho del último elemento para evitar desbordamiento 
-}*/
-
-
-
 .review-section {
     margin-top: 2rem;
     text-align: center;
@@ -345,9 +318,14 @@ main {
     /*
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    */
+    
     white-space: nowrap;
+    */
     margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .rating {
@@ -377,7 +355,7 @@ main {
 .button-left {
     background-color: transparent;
     position: absolute;
-    left: 10px; /* Ajusta este valor según sea necesario */
+    left: 10px; 
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s ease;
@@ -387,7 +365,7 @@ main {
 .button-right{
     background-color: transparent;
     position: absolute;
-    right: 10px; /* Ajusta este valor según sea necesario */
+    right: 10px; 
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s ease;
@@ -409,39 +387,31 @@ main {
 /*Seccion Contacto*/
 .contact-section {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.contact-info {
-    width: 45%;
+
+.contact-info, .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    width: 600px;
     font-style: normal;
-}
-
-
-.contact-form {
-    width: 45%;
-}
-
-.privacy-policy-check {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.privacy-link {
-    text-decoration: none;
-    color: var(--blue);
-}
-
-.contact-form h2 {
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
 }
 
 .contact-form form {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
+
 
 .contact-form form label {
     margin-bottom: 5px;
@@ -462,15 +432,8 @@ main {
     border-style: none;
     padding: 0.5em 0.8em;
     margin: 0.5em;
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.2);
     background-color: var(--blue);
-    display: inline-block;
-    text-align: center;
-    padding: 0.9rem 1rem;
-    text-decoration: none;
-    font-family: "Montserrat";
-    font-weight: 800;
     width: 150px;
     color: white;
 }
@@ -482,9 +445,15 @@ main {
     transition-timing-function: ease-in-out;
 }
 
-
-
-textarea {
+.contact-form form textarea {
     height: 150px;
     resize: none; 
+}
+
+ .contact-section h4 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
 }
