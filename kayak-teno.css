@@ -18,12 +18,12 @@
 
 .description {
     grid-column: 1 / 2;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0rem;
 }
 
 .description article {
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 0rem;
     background-color: #eee;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
     grid-column: 2 / 3;
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 1rem;
 }
 
 .booking button {
@@ -55,7 +55,7 @@
 video {
     max-width: 100%;
     height: auto;
-    margin: 1rem;
+    margin: 1rem 0rem;
 }
 
 /*Calendario de reservas*/
