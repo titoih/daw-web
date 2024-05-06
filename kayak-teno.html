@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/kayak-teno.css">
     <!--Scripts-->
-    <script src="scripts/load-header-footer.js" defer></script>
     <script src="scripts/cabecera.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="scripts/load-header-footer.js" defer></script>
     <script src="scripts/calendario.js" defer></script>
-    <title>Excursion</title>
+    <title>Kayak Teno</title>
 </head>
 
 <body>
@@ -100,8 +101,8 @@
                 <section class="calendar-wrapper">
                     <nav class="calendar-nav bg-orange">
                         <ul>
-                            <li id="prev">&#10094;</li>
-                            <li id="next">&#10095;</li>
+                            <li id="prev"><button>&#10094;</button></li>
+                            <li id="next"><button>&#10095;</button></li>
                             <!--Se añade el mes y el año dinámicamente con JavaScript-->
                             <li id="current-date"></li>
                         </ul>
@@ -169,6 +170,37 @@
                     </fieldset>
                 </form>
             </aside>
+        </section>
+        <!--Reviews-->
+        <section class="review-section-container">
+            <h2>Reseñas</h2>
+            <section class="review-section">
+                <article class="review-card">
+                    <h3>Título de la Review 1</h3>
+                    <p>Este es el contenido de la review 1.</p>
+                    <span class="rating">★★★★</span>
+                </article>
+                <article class="review-card">
+                    <h3>Título de la Review 2</h3>
+                    <p>Este es el contenido de la review 2.</p>
+                    <span class="rating">★★★</span>
+                </article>
+                <article class="review-card">
+                    <h3>Título de la Review 3</h3>
+                    <p>Este es el contenido de la review 3.</p>
+                    <span class="rating">★★★★★</span>
+                </article>
+                <article class="review-card">
+                    <h3>Título de la Review 4</h3>
+                    <p>Este es el contenido de la review 4.</p>
+                    <span class="rating">★★</span>
+                </article>
+                <article class="review-card">
+                    <h3>Título de la Review 5</h3>
+                    <p>Este es el contenido de la review 5.</p>
+                    <span class="rating">★★★★</span>
+                </article>
+            </section>
         </section>
     </main>
     <!--Footer-->

@@ -19,11 +19,12 @@ main {
     margin: 3rem 0rem;
     display: grid;
     grid-template-columns: 60% 40%;
+    column-gap: 2%;
 }
 
 .description {
     grid-column: 1 / 2;
-    padding: 1rem 1rem 1rem 0rem;
+    padding: 1rem 0rem;
 }
 
 .description article {
@@ -45,7 +46,7 @@ main {
     display: flex;
     flex-direction: column;
     grid-column: 2 / 3;
-    padding: 1rem 0rem 1rem 1rem;
+    padding: 1rem 0rem;
 }
 
 .booking button {
@@ -89,15 +90,21 @@ video {
 
 .calendar-nav #prev {
     float: left;
-    padding: 0.5em;
-    cursor: pointer;
 }
 
 .calendar-nav #next {
     float: right;
-    padding: 0.5em;
-    cursor: pointer;
 }
+
+.calendar-nav #prev button,
+.calendar-nav #next button {
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    padding: 0.5em;
+    font-size: 1.5rem;
+}
+
 
 #next:hover,
 #prev:hover {
@@ -141,6 +148,13 @@ video {
     cursor: pointer;
     position: relative;
     z-index: 1;
+}
+
+.days li button {
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    padding: 0.5em;
 }
 
 .days li.inactive {
@@ -235,16 +249,25 @@ fieldset:last-of-type {
     display: none;
 }
 
+/*Review*/
+.review-section-container {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.review-section-container h2 {
+    text-align: center;
+}
+
 /* Media queries */
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
     .main-section-ex {
         grid-template-columns: 100%;
     }
 
-    .description {
-        grid-column: 1;
-    }
-
+    .description,
     .booking {
         grid-column: 1;
     }

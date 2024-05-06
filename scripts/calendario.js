@@ -64,7 +64,7 @@ const renderCalendar = () => {
                 || 5 === new Date(currentYear, currentMonth, i).getDay()
                 || 6 === new Date(currentYear, currentMonth, i).getDay())
                 && i >= new Date().getDate() ? "disponible" : "inactive";
-            liTag += `<li class="${isToday} ${isDay}">${i}</li>`;
+            liTag += `<li class="${isToday} ${isDay}"><button>${i}</button></li>`;
 
         }
         //Creamos los li de los primeros días del mes siguiente
