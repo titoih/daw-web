@@ -457,22 +457,20 @@ button.bg-yellow:hover a {
 }
 
 /*Estilos enlace genérico:*/
-.regular-anchor {
-    color: var(--blue);
+.enlace {
     text-decoration: none;
-    font-weight: 800;
 }
 
-.regular-anchor:hover {
+.enlace:hover {
     color: var(--orange);
     text-decoration: underline;
 }
 
 /* footer */
 .container {
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer ul {
@@ -481,12 +479,14 @@ footer ul {
 
 footer {
     background-color: var(--blue);
-    padding: 0;
 }
 
 .footer-col {
-    width: 25%;
-    padding: 5%;
+    padding: 1%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-col h4 {
@@ -499,11 +499,8 @@ footer {
 }
 
 .footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
-    font-weight: 300;
     display: block;
     transition: all 0.3s ease;
 }
@@ -511,12 +508,14 @@ footer {
 .footer-col ul li a:hover {
     color: var(--orange);
     transform: translateX(8px);
+    text-decoration: underline;
 }
 
 .footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
+    font-size: 1rem;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
@@ -529,34 +528,43 @@ footer {
 .footer-col .social-links a:hover {
     color: var(--orange);
     background-color: #ffffff;
+    transform: scale(1.2);
 }
 
 .sub-container {
     border-top: 1px solid #80808026;
-    margin-top: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 .sub-container ul {
     display: flex;
-    flex-direction: row;
     padding: 1em;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.full-col {
-    width: 100%;
-    padding: 2.5%;
+.license {
+    padding-top: 1em;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
-#title-1n-footer {
-    margin-bottom: 0;
+.license p {
+    text-align: center;
+    margin: 0;
+}
+
+.license p,
+a.enlace {
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+
 }
 
 .footer-logo {
-    width: 75%;
-    height: 50%;
-    margin: 0em;
-    padding: 0em;
+    height: 125px;
     display: inline-block;
 }
 
@@ -568,6 +576,20 @@ footer h2 {
 
 ul.tos>li {
     padding: .5em;
+}
+
+li svg+p {
+    display: inline-block;
+    color: white;
+    margin: 0;
+}
+
+.icon {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    fill: white;
+    margin-right: 0.5rem;
 }
 
 /*Media queries*/
