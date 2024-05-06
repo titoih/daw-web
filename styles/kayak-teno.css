@@ -1,0 +1,246 @@
+.imagen-cabecera {
+    background-image: url("../img/kayak-cabecera.jpg");
+    background-position: center;
+}
+
+.imagen-cabecera h1,
+.imagen-cabecera h2 {
+    color: white;
+    text-shadow: 2px 2px var(--blue);
+}
+
+.main-section-ex {
+    grid-column: 2 / 3;
+    margin: 3rem 0rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.description {
+    grid-column: 1 / 2;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+.description article {
+    padding: 1rem;
+    margin: 1rem 0rem;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.description article ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    margin-left: 2rem;
+    color: var(--text);
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.booking button {
+    align-self: center;
+}
+
+.description h2,
+.booking h2 {
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0rem;
+}
+
+/*Calendario de reservas*/
+.calendar-wrapper {
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-nav {
+    padding: 70px 25px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.calendar-nav ul {
+    list-style-type: none;
+}
+
+.calendar-nav ul li {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.calendar-nav #prev {
+    float: left;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.calendar-nav #next {
+    float: right;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+#next:hover,
+#prev:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.weekdays {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0.6rem 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: calc(100%/7);
+    color: var(--title);
+    font-weight: 600;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+
+.days {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    background: #eee;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.days li {
+    width: calc(100%/7);
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--title);
+    font-size: 1rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.days li.inactive {
+    color: #ccc;
+    cursor: default;
+}
+
+.days li.active {
+    color: white;
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.days li.disponible::before {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.days li.active::before {
+    background-color: var(--orange);
+}
+
+.days li:hover::before {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*Formulario de reserva*/
+.booking form {
+    background-color: #eee;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    color: var(--text);
+}
+
+.booking label {
+    display: block;
+    font-family: inherit;
+    margin: 1rem;
+    font-size: larger;
+}
+
+fieldset {
+    padding: 1rem;
+}
+
+fieldset:first-of-type {
+    border-bottom: dotted var(--title) 0.3rem;
+    margin-bottom: 2rem;
+
+}
+
+fieldset legend {
+    color: var(--title);
+    font-weight: 600;
+    font-size: larger;
+}
+
+#user-feedback {
+    padding: 0.3rem;
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+fieldset select {
+    color: var(--text);
+    font-weight: 600;
+    font-size: large;
+    width: 4em;
+}
+
+.precio-total p {
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+fieldset:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media queries */
+@media (max-width: 920px) {
+    .main-section-ex {
+        grid-template-columns: 100%;
+    }
+
+    .description {
+        grid-column: 1;
+    }
+
+    .booking {
+        grid-column: 1;
+    }
+}

@@ -1,0 +1,99 @@
+/*Contenido*/
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card p {
+    text-align: justify;
+    color: #666;
+}
+
+.card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 2%;
+    width: 400px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);
+}
+
+.card-aside {
+    padding: 5%;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    width: 400px;
+    height: calc(400px*(3/4));
+    object-fit: cover;
+    /*Mantener relación de aspecto y hacer imagen responsive:*/
+    /*max-width: 100%; /*100% del largo de la imagen ocupando el máximo del tamaño del contenedor.*/
+    /*height: auto /*Se ajusta automáticamente al alto de la imagen*/
+}
+
+.card figure {
+    position: relative;
+    height: calc(400px*(3/4));
+}
+
+figcaption {
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    padding: 0.3rem;
+}
+
+figcaption p {
+    margin: 0rem;
+}
+
+.icon {
+    height: 16px;
+    color: white;
+}
+
+p.category {
+    float: left;
+    color: white;
+}
+
+p.price {
+    float: right;
+    color: white;
+}
+
+@media (max-width: 1300px) {
+    .card {
+        width: 350px;
+    }
+
+    .card img {
+        width: 350px;
+        height: calc(300px*(3/4));
+    }
+
+    .imagen-cabecera h1,
+    .imagen-cabecera h2 {
+        color: white;
+        text-shadow: 2px 2px var(--blue);
+    }
+}
+
+@media(max-width: 574px) {
+    .card {
+        width: 300px;
+    }
+
+    .card img {
+        width: 300px;
+        height: calc(300px*(3/4));
+    }
+}

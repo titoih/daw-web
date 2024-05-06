@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--Estilos-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/kayak-teno.css">
+    <!--Scripts-->
+    <script src="scripts/load-header-footer.js" defer></script>
+    <script src="scripts/cabecera.js" defer></script>
+    <script src="scripts/calendario.js" defer></script>
+    <title>Excursion</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header id="header">
+
+    </header>
+    <!--Contenido-->
+    <main>
+        <!--Título e imagen de cabecera-->
+        <section class="imagen-cabecera">
+            <h1>Kayak en Teno</h1>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+        </section>
+        <!--Breadcrumb-->
+        <nav aria-label="breadcrumb" id="breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="excursiones.html">Excursiones</a></li>
+                <li><a href="excursiones.html?categoria=kayak">Kayak</a></li>
+                <li>Kayak en Teno</li>
+            </ul>
+        </nav>
+        <section class="main-section-ex">
+            <section class="description">
+                <h2>Explora Teno y Los Gigantes en Kayak</h2>
+                <video controls="controls">
+                    <source src="videos/4154925-sd_960_540_30fps.mp4" type="video/mp4" />
+                </video>
+                <article>
+                    <h3>Sobre esta excursión:</h3>
+                    <p>Embárcate en una aventura única mientras exploras la impresionante costa de la Punta de Teno en
+                        kayak. Sumérgete en aguas cristalinas y descubre cuevas ocultas y acantilados majestuosos en
+                        esta excursión inolvidable.</p>
+
+                    <h4>¿Qué incluye?</h4>
+                    <ul>
+                        <li>Guías expertos que te llevarán a los mejores lugares.</li>
+                        <li>Equipo completo de kayak y seguridad.</li>
+                        <li>Parada en una playa secreta para nadar y relajarse.</li>
+                        <li>Fascinantes explicaciones sobre la geología y la vida marina local.</li>
+                    </ul>
+
+                    <h4>¿Qué hay que llevar?</h4>
+                    <ul>
+                        <li>Ropa cómoda que se pueda mojar.</li>
+                        <li>Protector solar y gorra.</li>
+                        <li>Botella de agua y bocadillos ligeros.</li>
+                        <li>Toalla y cambio de ropa para después.</li>
+                    </ul>
+
+                    <h4>¿Dónde nos vemos?</h4>
+                    <p>Nos encontraremos en el puerto de Buenavista del Norte a las 10:30 o 15:30, según tu preferencia.
+                        La excursión tiene una duración de aproximadamente 2 horas.</p>
+
+                    <h4>Precio por persona:</h4>
+                    <ul>
+                        <li>Adultos: 25€</li>
+                        <li>Menores (entre 10 y 17 años): 18€</li>
+                    </ul>
+                    <h4>A tener en cuenta:</h4>
+                    <ul>
+                        <li>Esta actividad es adecuada para todas las edades y niveles de experiencia en kayak.</li>
+                        <li>Es importante seguir las instrucciones de los guías en todo momento para garantizar la
+                            seguridad.</li>
+                        <li>Las condiciones meteorológicas pueden afectar el itinerario, pero nuestro equipo estará
+                            preparado para adaptarse.</li>
+                        <li>¡Prepárate para una aventura emocionante y recuerda traer tu espíritu explorador!</li>
+                    </ul>
+
+                    <p>Únete a nosotros para una experiencia única en la naturaleza virgen de Teno. ¡Reserva tu plaza
+                        ahora y descubre la belleza oculta de Tenerife desde el agua!</p>
+                </article>
+            </section>
+            <aside class="booking">
+                <h2>Booking</h2>
+                <section class="calendar-wrapper">
+                    <nav class="calendar-nav bg-orange">
+                        <ul>
+                            <li id="prev">&#10094;</li>
+                            <li id="next">&#10095;</li>
+                            <!--Se añade el mes y el año dinámicamente con JavaScript-->
+                            <li id="current-date"></li>
+                        </ul>
+                    </nav>
+                    <section class="calendar">
+                        <ul class="weekdays">
+                            <li>Mo</li>
+                            <li>Tu</li>
+                            <li>We</li>
+                            <li>Th</li>
+                            <li>Fr</li>
+                            <li>Sa</li>
+                            <li>Su</li>
+                        </ul>
+                        <ul class="days">
+                            <!--Se añaden los días del mes dinámicamente con JavaScript-->
+                        </ul>
+                    </section>
+                </section>
+                <form action="" class="hidden">
+                    <fieldset class="horarios hidden">
+                        <legend>Horarios:</legend>
+                        <label for="10:30"><time datetime="10:30">10:30</time>
+                            <input type="radio" name="hora" id="10:30" value="10:30" class="hora"></label>
+                        <label for="15:30"><time datetime="15:30">15:30</time>
+                            <input type="radio" name="hora" id="15:30" value="15:30" class="hora">
+                        </label>
+                        <p id="user-feedback"></p>
+                    </fieldset>
+                    <fieldset class="tickets hidden">
+                        <legend>Tickets:</legend>
+                        <p>Precio por persona.</p>
+                        <label for="adultos">Adultos <span id="precio-adulto">25</span>€:
+                            <select name="adultos" id="adultos">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select></label>
+
+                        <label for="menores">Menores <span id="precio-menor">18</span>€:
+                            <select name="menores" id="menores">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset class="precio-total hidden">
+                        <p>Precio total: <span id="precio-total"></span> €</p>
+                    </fieldset>
+                    <fieldset>
+                        <button class="btn bg-orange hidden"><a href="">Reservar</a></button>
+                    </fieldset>
+                </form>
+            </aside>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer id="footer">
+
+    </footer>
+</body>
+
+</html>

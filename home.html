@@ -14,200 +14,229 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <!--Estilos-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home.css">
     <!--Scripts-->
-    <script src="script.js"></script>
-    <title>Home</title>
+    <script src="scripts/cabecera.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="scripts/load-header-footer.js" defer></script>
+    <title>Proyecto DAW</title>
 </head>
 
 <body>
     <!--Encabezado-->
     <header id="header">
-        <!--Barra de navegación-->
-        <nav id="navbar-header">
-            <a href="home.html">
-                <img src="img/logo_apaisado.png" alt="Logo" id="logo" class="header-logo">
-            </a>
-            <!--Botón hamburguesa-->
-            <button class="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" class="burger-icon" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                </svg></button>
-            <!--Fin botón hamburguesa-->
-            <ul class="navbar-list">
-                <li class="navbar-li dropdown">
-                    <a href="#dropdown">EXCURSIONES</a>
-                    <ul class="dropdown-content">
-                        <li class="navbar-li"><a href="">OPCIÓN 1</a></li>
-                        <li class="navbar-li"><a href="">OPCIÓN 2</a></li>
-                        <li class="navbar-li"><a href="">OPCIÓN 3</a></li>
-                    </ul>
-                </li>
-                <li class="navbar-li">
-                    <a href="quienessomos.html">QUIÉNES SOMOS</a>
-                </li>
-                <li class="navbar-li">
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-        <!--Título e imagen de cabecera-->
-        <section class="imagen-cabecera">
-            <h1>Lorem Ipsum Dolor</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h2>
-            <button class="blue-button"><a href="">EXCURSIONES</a></button>
-        </section>
     </header>
     <!--Contenido-->
     <main>
+        <!--Título e imagen de cabecera-->
+        <section class="imagen-cabecera">
+            <h1>Web para Daw!</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h2>
+            <button class="btn bg-blue"><a href="excursiones.html">EXCURSIONES</a></button>
+        </section>
+        <!--Sección de excursiones destacadas-->
         <section class="main-section">
             <h2>Excursiones destacadas</h2>
             <section class="cards-container">
-                <article class="card">
-                    <a target="_blank"
-                        href="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img
-                            src="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Picture of a mountain"></a>
+                <article class="card kayak">
+                    <figure>
+                        <a href="kayak-teno.html"><img src="img/kayak.jpg" alt=""></a>
+                        <figcaption class="bg-blue">
+                            <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65" />
+                                </svg> Categoría: Kayak</p>
+                            <p class="price">Precio: 25,00€</p>
+                        </figcaption>
+                    </figure>
                     <aside class="card-aside">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nobis, numquam tempora
-                            eaque
-                            ullam natus voluptate eligendi quia cupiditate? Odit labore veritatis aliquam quasi
-                            blanditiis
-                            officia repudiandae consequatur vel tempore!</p>
-                        <button class="blue-button"><a href="">Ver excursión</a></button>
+                        <h3>Kayak en Teno</h3>
+                        <p>Sumérgete en la belleza natural de las aguas cristalinas de Teno, mientras remas a través del
+                            impresionante paisaje del acantilado de Los Gigantes. Nuestra actividad te ofrece la
+                            oportunidad de explorar cuevas ocultas y disfrutar de una experiencia inolvidable en
+                            contacto con la naturaleza. ¡Reserva
+                            ahora y prepárate para una aventura inigualable!</p>
+                        <button class="btn bg-blue"><a href="" target="_blank">Ver
+                                excursión</a></button>
+                    </aside>
+                </article>
+                <article class="card senderismo">
+                    <figure>
+                        <a href=""><img src="img/laurisilva.jpg" alt=""></a>
+                        <figcaption class="bg-blue">
+                            <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z" />
+                                    <path
+                                        d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5" />
+                                </svg> Categoría: Senderismo</p>
+                            <p class="price">Precio: 15,00€</p>
+                        </figcaption>
+                    </figure>
+                    <aside class="card-aside">
+                        <h3>Sendero El Pijaral</h3>
+                        <p>Descubre la magia de la naturaleza en Tenerife con nuestra emocionante excursión por el
+                            Sendero Reserva del Pijaral. Sumérgete en el bosque de Laurisilva, uno de los ecosistemas
+                            más antiguos y biodiversos de la isla. Nuestros guías expertos te llevarán a través de este
+                            impresionante entorno, brindándote información sobre su historia y ecología.</p>
+                        <button class="btn bg-blue"><a href="">Ver excursión</a></button>
                     </aside>
                 </article>
                 <article class="card">
-                    <a target="_blank"
-                        href="https://images.unsplash.com/photo-1554629947-334ff61d85dc?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img
-                            src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Picture of a mountain"></a>
+                    <figure>
+                        <a href=""><img src="img/teide.jpg" alt=""></a>
+                        <figcaption class="bg-blue">
+                            <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z" />
+                                    <path
+                                        d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5" />
+                                </svg> Categoría: Senderismo</p>
+                            <p class="price">Precio: 15,00€</p>
+                        </figcaption>
+                    </figure>
                     <aside class="card-aside">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nobis, numquam tempora
-                            eaque
-                            ullam natus voluptate eligendi quia cupiditate? Odit labore veritatis aliquam quasi
-                            blanditiis
-                            officia repudiandae consequatur vel tempore!</p>
-                        <button class="blue-button"><a href="">Ver excursión</a></button>
+                        <h3>Ruta Pico Cho Marcial</h3>
+                        <p>Descubre la majestuosidad del Pico Cho Marcial con nuestra emocionante ruta circular de
+                            senderismo en Tenerife. Guiados por expertos montañeros, explorarás senderos escénicos y
+                            panorámicos, disfrutando de vistas espectaculares en cada paso. Esta aventura de 2 horas es
+                            perfecta para excursionistas con un nivel de condición física moderado. </p>
+                        <button class="btn bg-blue"><a href="">Ver excursión</a></button>
                     </aside>
                 </article>
                 <article class="card">
-                    <a target="_blank"
-                        href="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img
-                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Picture of a mountain"></a>
+                    <figure>
+                        <a href=""><img src="img/buceo.jpg" alt=""></a>
+                        <figcaption class="bg-blue">
+                            <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65" />
+                                </svg> Categoría: Buceo</p>
+                            <p class="price">Precio: 40,00€</p>
+                        </figcaption>
+                    </figure>
                     <aside class="card-aside">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nobis, numquam tempora
-                            eaque
-                            ullam natus voluptate eligendi quia cupiditate? Odit labore veritatis aliquam quasi
-                            blanditiis
-                            officia repudiandae consequatur vel tempore!</p>
-                        <button class="blue-button"><a href="">Ver excursión</a></button>
+                        <h3>Bautismo de buceo</h3>
+                        <p>Sumérgete en las aguas cristalinas del Atlántico con nuestro emocionante bautismo de buceo en
+                            Tenerife. Con instructores profesionales, equipo completo de buceo y una inmersión guiada,
+                            esta experiencia te permite explorar arrecifes de coral y vida marina única. Perfecto para
+                            principiantes, incluye una clase teórica introductoria y certificado de participación.</p>
+                        <button class="btn bg-blue"><a href="">Ver excursión</a></button>
                     </aside>
                 </article>
                 <article class="card">
-                    <a target="_blank"
-                        href="https://images.unsplash.com/photo-1549880181-56a44cf4a9a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img
-                            src="https://images.unsplash.com/photo-1549880181-56a44cf4a9a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Picture of a mountain"></a>
+                    <figure>
+                        <a href=""><img src="img/astronomia.jpg" alt=""></a>
+                        <figcaption class="bg-blue">
+                            <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                                </svg> Categoría: Astronomia</p>
+                            <p class="price">Precio: 20,00€</p>
+                        </figcaption>
+                    </figure>
                     <aside class="card-aside">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nobis, numquam tempora
-                            eaque
-                            ullam natus voluptate eligendi quia cupiditate? Odit labore veritatis aliquam quasi
-                            blanditiis
-                            officia repudiandae consequatur vel tempore!</p>
-                        <button class="blue-button"><a href="">Ver excursión</a></button>
+                        <h3>Ruta bajo las estrellas</h3>
+                        <p>Descubre la belleza del firmamento nocturno en una emocionante ruta guiada por expertos
+                            astrónomos en el Parque Nacional de Las Cañadas del Teide. Con telescopios de alta calidad y
+                            una sesión de fotografía de la Vía Láctea incluida, esta experiencia te sumerge en un viaje
+                            celestial único. Reserva ahora y maravíllate con la magnificencia del universo en una noche
+                            inolvidable.</p>
+                        <button class="btn bg-blue"><a href="">Ver excursión</a></button>
                     </aside>
                 </article>
                 <article class="card">
-                    <a target="_blank"
-                        href="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img
-                            src="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Picture of a mountain"></a>
+                    <figure>
+                        <a href=""><img src="img/paisaje-lunar.jpg" alt=""></a>
+                        <figcaption class="bg-blue">
+                            <p class="category"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z" />
+                                    <path
+                                        d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5" />
+                                </svg> Categoría: Senderismo</p>
+                            <p class="price">Precio: 15,00€</p>
+                        </figcaption>
+                    </figure>
                     <aside class="card-aside">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nobis, numquam tempora
-                            eaque
-                            ullam natus voluptate eligendi quia cupiditate? Odit labore veritatis aliquam quasi
-                            blanditiis
-                            officia repudiandae consequatur vel tempore!</p>
-                        <button class="blue-button"><a href="">Ver excursión</a></button>
-                    </aside>
-                </article>
-                <article class="card">
-                    <a target="_blank"
-                        href="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><img
-                            src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Picture of a mountain"></a>
-                    <aside class="card-aside">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nobis, numquam tempora
-                            eaque
-                            ullam natus voluptate eligendi quia cupiditate? Odit labore veritatis aliquam quasi
-                            blanditiis
-                            officia repudiandae consequatur vel tempore!</p>
-                        <button class="blue-button"><a href="">Ver excursión</a></button>
+                        <h3>Sendero Paisaje Lunar</h3>
+                        <p>Embárcate en una aventura única para descubrir el asombroso paisaje lunar de Vilaflor en
+                            Tenerife. Con guías locales expertos, esta excursión te lleva a través de formaciones
+                            rocosas y paisajes desérticos que te dejarán sin aliento. Disfruta de una interpretación
+                            detallada de la geología y la historia del área, y captura momentos inolvidables con tu
+                            cámara.</p>
+                        <button class="btn bg-blue"><a href="">Ver excursión</a></button>
                     </aside>
                 </article>
             </section>
             <!--Reviews-->
             <h2>Reseñas</h2>
             <section class="review-section">
-                    <article class="review-card">
-                        <h4>Título de la Review 1</h4>
-                        <p>Este es el contenido de la review 1.</p>
-                        <span class="rating">★★★★</span>
-                    </article>
-                    <article class="review-card">
-                        <h4>Título de la Review 2</h4>
-                        <p>Este es el contenido de la review 2.</p>
-                        <span class="rating">★★★</span>
-                    </article>
-                    <article class="review-card">
-                        <h4>Título de la Review 3</h4>
-                        <p>Este es el contenido de la review 3.</p>
-                        <span class="rating">★★★★★</span>
-                    </article>
-                    <article class="review-card">
-                        <h4>Título de la Review 4</h4>
-                        <p>Este es el contenido de la review 4.</p>
-                        <span class="rating">★★</span>
-                    </article> 
-                    <article class="review-card">
-                        <h4>Título de la Review 5</h4>
-                        <p>Este es el contenido de la review 5.</p>
-                        <span class="rating">★★★★</span>
-                    </article>
+                <article class="review-card">
+                    <h4>Título de la Review 1</h4>
+                    <p>Este es el contenido de la review 1.</p>
+                    <span class="rating">★★★★</span>
+                </article>
+                <article class="review-card">
+                    <h4>Título de la Review 2</h4>
+                    <p>Este es el contenido de la review 2.</p>
+                    <span class="rating">★★★</span>
+                </article>
+                <article class="review-card">
+                    <h4>Título de la Review 3</h4>
+                    <p>Este es el contenido de la review 3.</p>
+                    <span class="rating">★★★★★</span>
+                </article>
+                <article class="review-card">
+                    <h4>Título de la Review 4</h4>
+                    <p>Este es el contenido de la review 4.</p>
+                    <span class="rating">★★</span>
+                </article>
+                <article class="review-card">
+                    <h4>Título de la Review 5</h4>
+                    <p>Este es el contenido de la review 5.</p>
+                    <span class="rating">★★★★</span>
+                </article>
             </section>
             <!--Contacto-->
             <h2>Contacto</h2>
             <section class="contact-section">
                 <address class="contact-info">
                     <h4>Dirección:</h4>
-                    <p> C. Pob. Marinero, s/n, 38683,<br> 
+                    <p> C. Pob. Marinero, s/n, 38683,<br>
                         Acantilados de Los Gigantes, Santa Cruz de Tenerife</p>
-                    <object class="contact-map" type="text/html" data="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11822.229401933222!2d-16.848777862150204!3d28.2446650305405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1714957145040!5m2!1ses!2ses" style="width:100%;height:300px;"></object>
-                 </address>
+                    <object class="contact-map" type="text/html"
+                        data="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11822.229401933222!2d-16.848777862150204!3d28.2446650305405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1714957145040!5m2!1ses!2ses"
+                        style="width:100%;height:300px;"></object>
+                </address>
                 <article class="contact-form">
                     <h4>Formulario de contacto:</h4>
                     <form action="#" method="POST">
                         <input type="text" id="name" name="name" placeholder="Nombre" required>
                         <input type="email" id="email" name="email" placeholder="Email" required>
-                        <textarea id="message" name="message" maxlength="500" height="200px" placeholder="Mensaje (máx. 500 caracteres)" required></textarea>
+                        <textarea id="message" name="message" maxlength="500" height="200px"
+                            placeholder="Mensaje (máx. 500 caracteres)" required></textarea>
                         <button class="contact-form-button" type="submit">Enviar</button>
                         <label for="privacy-policy" class="privacy-policy-check">
                             <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
-                            <span class="privacy-text">Al continuar, acepta nuestra <a href="" class="privacy-link" target="_blank">política de privacidad</a></span>
+                            <span class="privacy-text">Al continuar, acepta nuestra <a href="" class="privacy-link"
+                                    target="_blank">política de privacidad</a></span>
                         </label>
                 </article>
             </section>
     </main>
     <!--Footer-->
-    <footer></footer>
+    <footer id="footer">
+
+    </footer>
 </body>
+
 </html>
