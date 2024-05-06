@@ -5,9 +5,7 @@
 }
 
 main {
-    grid-template-columns: 80%;
-    justify-content: center;
-
+    grid-template-columns: 12.5% 75% 12.5%;
 }
 
 /*Formulario filtro y búsqueda*/
@@ -17,6 +15,7 @@ form {
     display: flex;
     justify-content: space-around;
     flex-basis: center;
+    grid-column: 2/3;
 }
 
 form fieldset {
@@ -77,6 +76,7 @@ form label {
 /*Contenido:*/
 .ex-container {
     flex-direction: column;
+    grid-column: 2/3;
 }
 
 .excursion {
@@ -85,7 +85,7 @@ form label {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
-    margin: 2%;
+    margin: 2% 0%;
 }
 
 .excursion:hover {
@@ -128,4 +128,38 @@ form label {
 .ex-icon {
     height: 1em;
     color: var(--title);
+}
+
+@media (max-width: 1700px) {
+
+    .excursion figure,
+    .excursion aside {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .excursion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .excursion figure,
+    .excursion aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form fieldset {
+        margin-bottom: 5%;
+    }
+
+
+
 }

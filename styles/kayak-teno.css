@@ -1,3 +1,7 @@
+main {
+    grid-template-columns: 12.5% 75% 12.5%;
+}
+
 .imagen-cabecera {
     background-image: url("../img/kayak-cabecera.jpg");
     background-position: center;

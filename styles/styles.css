@@ -226,10 +226,9 @@ p {
 }
 
 ul.breadcrumb {
-    margin-left: 5%;
+    margin-left: 12.5%;
     padding: 0.5em 0em;
     list-style: none;
-    left: 5%;
 }
 
 ul.breadcrumb li {
@@ -298,10 +297,9 @@ main {
 
 /*Estilos reviews*/
 .review-section {
-    margin-top: 2rem;
+    margin: 2rem 0rem;
     text-align: center;
     position: relative;
-    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -327,6 +325,9 @@ main {
     justify-content: center;
 }
 
+.review-card h3 {
+    font-size: 18px;
+}
 
 .review-card p {
     text-align: justify;
@@ -339,7 +340,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    margin-bottom: 5%;
+    margin: 2rem 0rem;
 }
 
 .contact-info,
