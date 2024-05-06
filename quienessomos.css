@@ -10,32 +10,38 @@
     text-shadow: 2px 2px var(--blue);
 }
 
-
-
-.imagen-somos-1,
-.imagen-somos-2 {
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-}
-
-.imagen-somos-1 {
-    background-image: url("img/taganana.jpeg");
-}
-
-.imagen-somos-2 {
-    background-image: url("img/mirador.jpeg");
-}
-
 .nosotros-section {
-    margin: 20px auto;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.historia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.historia img {
+    width: 600px;
+    height: 200px;
+    padding: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.texto-historia {
+    text-align: justify;
+    padding: 20px;
+    width: 600px;
+}
+
+.texto-historia p {
+    margin: 0rem;
 }
 
 .animate-section {
@@ -46,25 +52,23 @@
     margin-bottom: 3rem;
 }
 
+@media (max-width: 1300px) {
+    .historia {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.historia, .imagen-somos-1, .imagen-somos-2 {
-    display: flex;
-    flex-direction: column;
-    margin: 0 2rem;
-    width: 600px;
-    font-style: normal;
-    margin-bottom: 2rem;
-    margin-bottom: 20px;
+    #img-historia-2 {
+        order: 2;
+        /* Cambiar el orden de la imagen */
+    }
 }
 
+@media screen and (max-width: 768px) {
 
-
-
-
-.texto-historia {
-    text-align: justify;
-    flex: 1;
-    padding: 20px;
-    background: white; /* Agregamos un fondo blanco detrás del texto */
-    opacity: 0.8; /* Ajustamos la opacidad para que el texto sea legible */
+    .texto-historia,
+    .historia img {
+        width: 100%;
+        /* Ajustar el ancho al 100% cuando se apilen */
+    }
 }
