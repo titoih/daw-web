@@ -1,6 +1,7 @@
 .imagen-cabecera {
     background-image: url("../img/kayak-cabecera.jpg");
     background-position: center;
+    height: 300px;
 }
 
 .imagen-cabecera h1,
