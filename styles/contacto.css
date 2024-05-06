@@ -1,0 +1,55 @@
+main {
+    grid-template-columns: 10% 80% 10%;
+}
+
+.imagen-cabecera {
+    background-image: url("../img/atardecer.jpg");
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+
+.imagen-cabecera h1 {
+    text-shadow: 2px 2px var(--blue);
+}
+
+.contact-tel-email {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.contact-tel-email article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin: 1rem 0rem;
+    fill: var(--blue);
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+.faq {
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+.faq p {
+    text-align: center;
+}

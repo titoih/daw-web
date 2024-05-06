@@ -1,7 +1,7 @@
 .imagen-cabecera {
-    background-image: url("img/monte.jpeg");
+    background-image: url("../img/monte.jpeg");
     background-position: center;
-    height: 200px;
+    height: 300px;
     width: 100%;
 }
 
